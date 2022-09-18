@@ -1,7 +1,3 @@
-from cgi import print_arguments
-import re
-
-
 resim = ["""
    +---+
    |   |
