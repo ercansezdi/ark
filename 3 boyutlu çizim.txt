@@ -1,8 +1,0 @@
-'ucs' komutu bizim x,y,z düzlemimizi belirlememizi saðlar.
-'bo' komutu alan belirlemede kullanýlýr.Mesela bir biri içerisine geçmiþ çizgilerin kesiþtikleri yer.
-'REG' komutu yine bo gibi alan belirlememizi saðlar.
-'UNION' reg yaptýktan sonra tüm parçalarý birleþtirmemizi saðlar.
-'SU' birleþtirdiðimiz nesnelerden istediðimizi çýkarmamýzý saðlar.
-'ÝNTERSECT' iki nesnenin kesiþim noktalarýný çýrtýr.
-'MA' komutu biçim boyayýcýsýdýr.
-'rote 3d' nesneyi çevirmek için kullanýrýz 
