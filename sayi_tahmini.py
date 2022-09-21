@@ -1,35 +1,59 @@
 from pickle import TRUE
 from random import randint
 
+
 tahmin_sayisi =[]
 
 kullanıcı_tahmini = []
-hak = 10
+hak = 9
 
-while kullanıcı_tahmini in TRUE:
+while True:
     kura_sayi = randint(0,100)
     tahmin_sayisi.append(kura_sayi)
-    input("lütfen 0 ile 100 arasında bir tahmin giriniz:")
-    if 50< tahmin_sayisi <=100:
-        kullanıcı = input("lütfen 50 ile 100 arasında bir tahmin giriniz: ")
-        kullanıcı_tahmini.append(kullanıcı)
-        if kullanıcı_tahmini == tahmin_sayisi:
-            print("kazandınız")
-            break
-        else:
-            input("lütfen tekrardeneyin:")
-            hak-=1
-    elif 0< tahmin_sayisi<=50:
-        kullanıcı = input("lütfen 0 ile 50 arasında bir tahmin giriniz: ")
-        kullanıcı_tahmini.append(kullanıcı)
-        if kullanıcı_tahmini == tahmin_sayisi:
-            print("kazandınız")
-            break
-        else:
-            input("lütfen tekrardeneyin:")
-            hak-=1
-    else:
-        print("hacı abi naptın ya")
-if hak == 0:
-    print("kaybettiniz başka zaman belki :)")
+    kullanıcı_tahmini.append(int(input("lüten bir sayı giriniz: ")))
+    
+    while True:
+        if tahmin_sayisi == kullanıcı_tahmini:
+            print("müneccim misin mübarek")
 
+        elif tahmin_sayisi < kullanıcı_tahmini:
+            kullanıcı = int(input("lütfen daha düşük bir tahmin giriniz: "))
+            kullanıcı_tahmini.append(kullanıcı)
+
+            if kullanıcı_tahmini == tahmin_sayisi:
+                print("kazandınız")
+                break
+            elif tahmin_sayisi < kullanıcı_tahmini:
+                kullanıcı = int(input("lütfen daha düşük bir tahmin giriniz: "))
+                kullanıcı_tahmini.append(kullanıcı)
+                hak -= 1
+            elif tahmin_sayisi > kullanıcı_tahmini:
+                kullanıcı = int(input("lütfen daha büyük bir tahmin giriniz: "))
+                kullanıcı_tahmini.append(kullanıcı) 
+                hak -= 1               
+            elif hak == 0:
+                print("bulamadı mal")
+                break
+        
+        elif tahmin_sayisi > kullanıcı_tahmini:
+            kullanıcı = int(input("lütfen daha büyük bir tahmin giriniz: "))
+            kullanıcı_tahmini.append(kullanıcı)
+
+            if kullanıcı_tahmini == tahmin_sayisi:
+                print("kazandınız")
+                break
+            elif tahmin_sayisi < kullanıcı_tahmini:
+                kullanıcı = int(input("lütfen daha düşük bir tahmin giriniz: "))
+                kullanıcı_tahmini.append(kullanıcı)
+                hak -= 1
+            elif tahmin_sayisi > kullanıcı_tahmini:
+                kullanıcı = int(input("lütfen daha büyük bir tahmin giriniz: "))
+                kullanıcı_tahmini.append(kullanıcı) 
+                hak -= 1               
+            if hak == 0:
+                print("bulamadı mal")
+                break
+            
+    if hak == 0:
+        print("kaybettiniz başka zaman belki :)")
+        break
