@@ -21,11 +21,15 @@ sayi_grubu2.append("rasgele sayılar bunlar")
 print(sayi_grubu2)
 
 print(sayi_grubu2.index(8))    #8 sayısının indexte kaçıncı sırada olduğunu gösteriyor. yani 3
-
-print(Sehirler.count("adana"))  #sehirler grubunda kaç adet adana var onu sayıyor(ercana sor harf harf nasıl aldırtırım)
-
+a_toplam = 0 
+for i in Sehirler:
+    print(i.count("a"))  #sehirler grubunda kaç adet adana var onu sayıyor(ercana sor harf harf nasıl aldırtırım)
+    a_toplam += i.count("a")
+print("Toplam a sayisi :",a_toplam)
 print(Sehirler.count("a"))
 #ercana reverse i tekrar anlattır!!
+
+#reverse diziyi tersine çevirir.
 #['append', 'clear', 'copy', 'count', 'extend', 'index','insert', 'pop', 'remove', 'reverse', 'sort']
 
 
