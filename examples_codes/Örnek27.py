@@ -28,20 +28,15 @@ def obeb(sayi1,sayi2):
 def okek(sayi1,sayi2):
     if sayi1 > sayi2:
         deger = sayi1
-        while deger > 0:
-            if deger % sayi1 == 0 and deger % sayi2 == 0 :
-                sonuc = deger
-                break
-            deger+=1
         
     elif sayi2 > sayi1:
         deger = sayi2
-        while deger > 0:
-            if deger % sayi1 == 0 and deger % sayi2 == 0 :
-                sonuc = deger
-                break
-            
-            deger+=1
+    while deger > 0:
+        if deger % sayi1 == 0 and deger % sayi2 == 0 :
+            sonuc = deger
+            break
+        
+        deger+=1
         
     elif sayi1 == sayi2:
         sonuc = sayi1

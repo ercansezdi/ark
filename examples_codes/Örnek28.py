@@ -11,7 +11,7 @@ def mukemmel_sayi(sayi):
                 toplam+=bolen_sayi
             bolen_sayi-=1
         if toplam == sayi:
-            print(sayi,"sayisi mukemmel sayidir.")
+            return sayi
         sayi-=1
         
 
@@ -19,6 +19,6 @@ def mukemmel_sayi(sayi):
 
 
 
-
-deger = int(input("1 ile hangi sayi arasindaki mukemmel sayilar bulsun giriniz :"))
-mukemmel_sayi(deger)
+for i in range(2,9999):
+    if (i == mukemmel_sayi(i)):
+        print(i , "muk sayi")
