@@ -4,7 +4,7 @@ hak=10
 kura_sayısı=randint(0,100)
 kullanıcı_tahminleri=[]
 print("toplam hakkınız:",hak)
-print(kura_sayısı)
+#print(kura_sayısı)
 
 while True:
     Alınan_sayi=int(input("lütfen bir sayı giriniz:"))
